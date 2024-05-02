@@ -40,9 +40,12 @@ namespace IP_Geo_Locator
                         Console.WriteLine("Press any key to continue...");
                         Console.ReadKey();
                     }
+                    // Catches any exceptions that may occur
                     catch (HttpRequestException ex)
                     {
                         Console.WriteLine($"Error: {ex.Message}");
+                        Console.WriteLine("Press any key to continue...");
+                        Console.ReadKey();
                     }
                 }
             }
