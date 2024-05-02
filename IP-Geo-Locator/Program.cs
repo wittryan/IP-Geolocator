@@ -9,16 +9,6 @@ using Newtonsoft.Json;
 namespace IP_Geo_Locator
 {
 
-    public class Data
-    {
-        public string city { get; set; }
-        public string region { get; set; }
-        public string country { get; set; }
-        public string loc { get; set; }
-        public string postal { get; set; }
-        public string org { get; set; }
-        public string timezone { get; set; }
-
         internal class Program
         {
             static async Task Main(string[] args)
@@ -58,4 +48,3 @@ namespace IP_Geo_Locator
             }
         }
     }
-}
